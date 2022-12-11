@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.send('<h1>404 Page</h1>')
+    res.render('error404')
 })
 
 const PORT = process.env.PORT || 8080
