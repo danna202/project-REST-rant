@@ -40,6 +40,7 @@ rants
 | review    	| string                	|
 
 Planning
+    
     User Stories
 
     Wireframes
