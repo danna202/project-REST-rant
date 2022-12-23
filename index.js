@@ -9,12 +9,12 @@ app.use('/places', require('./controllers/places'))
 
 
 app.get('/', (req, res) => {
-    res.render('home')
+    res.send('<h1>Home</h1>')
 })
 
 
 app.get('*', (req, res) => {
-    res.status(404)('<h1>404></h1>')
+    res.send('<h1>404</h1>')
 })
 
 const PORT = process.env.PORT || 8080
